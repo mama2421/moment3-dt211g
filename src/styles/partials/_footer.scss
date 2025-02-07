@@ -1,9 +1,9 @@
 // _footer.scss
 .footer {
-    bottom: 0;
-    width: 100vw;
-    background-color: $primary-color;
-    text-align: center;
-    padding: 2rem;
-    font-size: 18px;
-  }
+  bottom: 0;
+  width: 100vw;
+  background-color: darken($primary-color, 30%);
+  text-align: center;
+  padding: 2rem;
+  font-size: 18px;
+}

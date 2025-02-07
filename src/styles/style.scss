@@ -26,17 +26,18 @@ picture{
 
 %text-style {
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.8rem;
     font-family: 'Roboto', sans-serif;
   }
   h2 {
     @extend %text-style;
-    font-size: 24px; // Överskrifter har en större font-size
+    font-size: 36px; 
     font-weight: bold;
   }
   
   p {
     @extend %text-style;
+    padding-bottom: 2em;
   }
   a {
     @extend %text-style;

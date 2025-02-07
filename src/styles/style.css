@@ -10,11 +10,8 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-header .logo a {
-  color: #000;
-  font-size: 0.8em;
-  margin: 0;
-  text-decoration: none;
+header:hover {
+  background-color: #ac9398;
 }
 
 nav {
@@ -101,7 +98,7 @@ nav a {
 .footer {
   bottom: 0;
   width: 100vw;
-  background-color: rgb(168, 141, 146);
+  background-color: #584447;
   text-align: center;
   padding: 2rem;
   font-size: 18px;
@@ -187,13 +184,17 @@ picture img {
 
 a, p, h2 {
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.8rem;
   font-family: "Roboto", sans-serif;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 36px;
   font-weight: bold;
+}
+
+p {
+  padding-bottom: 2em;
 }
 
 a {
