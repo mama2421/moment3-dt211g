@@ -2,7 +2,7 @@
   "name": "moment2",
   "version": "1.0.0",
   "main": "index.js",
-  "source": "src/index.html",
+"source": ["src/index.html", "src/sass.html"],
   "scripts": {
     "start": "parcel",
     "build": "parcel build"
