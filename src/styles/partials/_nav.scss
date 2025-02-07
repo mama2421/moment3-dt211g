@@ -1,8 +1,8 @@
 @import './variables'; // Import the variables
-
+$theme: 'light';
 nav {
   // Default (light theme)
-  background-color: $primary-color-light;
+  background-color: $primary-color;
   @include box-shadow(2px 0px 1000px rgba(0, 0, 0, 0.71));
   font-size: 1.4em;
   position: fixed;

@@ -15,11 +15,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #e0afaf;
   color: #333333;
 }
 header:hover {
-  background-color: white;
+  background-color: #e3b6b6;
 }
 @media (prefers-color-scheme: dark) {
   header {
@@ -43,7 +43,7 @@ header:hover {
 /* Ljust Tema */
 /* Mörkt Tema */
 nav {
-  background-color: #ffffff;
+  background-color: #e0afaf;
   box-shadow: 2px 0px 1000px rgba(0, 0, 0, 0.71);
   font-size: 1.4em;
   position: fixed;
@@ -165,11 +165,8 @@ nav a {
   text-align: center;
   padding: 2rem;
   font-size: 18px;
-  background-color: #ffffff;
+  background-color: #e0afaf;
   color: #333333;
-}
-.footer:hover {
-  background-color: white;
 }
 @media (prefers-color-scheme: dark) {
   .footer {
@@ -252,7 +249,6 @@ main {
 
 body {
   font-family: "Roboto", sans-serif;
-  --color2: pink;
 }
 
 picture img {

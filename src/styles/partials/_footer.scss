@@ -1,5 +1,5 @@
 @import './variables'; // Import the variables
-
+$theme: 'light';
 .footer {
   bottom: 0;
   width: 100vw;
@@ -8,13 +8,8 @@
   font-size: 18px;
 
   // Default (light theme)
-  background-color: $primary-color-light;
+  background-color: $primary-color;
   color: $secondary-color-light; 
-
-  // Hover effect for light theme
-  &:hover {
-    background-color: lighten($primary-color-light, 2%);
-  }
 
   // Media query for dark theme
   @media (prefers-color-scheme: dark) {

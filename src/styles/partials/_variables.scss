@@ -1,14 +1,15 @@
 // _variables.scss
 
 /* Allmänna variabler */
-$primary-color: rgb(168, 141, 146);  // Standard primary color
+$primary-color: #e0afaf;  // Ljus bakgrund
+;  // Standard primary color
 $secondary-color: #000;  // Standard secondary color
 $font-family: 'Roboto', sans-serif;
 $font-size-base: 1em;
 $line-height: 1.15cm;
 
 /* Ljust Tema */
-$primary-color-light: rgb(168, 141, 146);  // Vit bakgrund
+$primary-color-light: #ffffff;  // Ljus bakgrund
 $secondary-color-light: #333333;  // Mörk text
 $accent-color-light: #007bff;  // Blå för länkar och knappar
 
