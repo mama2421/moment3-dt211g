@@ -2,3 +2,37 @@
 @import 'partials/mixins';
 @import 'partials/typography';
 @import 'partials/layout';
+
+body{
+    background-color: aqua;
+}
+$primary-dark: darken($primary-color, 10%);
+$primary-light: lighten($primary-color, 10%);
+.button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.primary-button {
+    @extend .button;
+    background-color: $primary-color;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        @include theme-colors('dark');
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        @include theme-colors('light');
+    }
+}
