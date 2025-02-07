@@ -7,12 +7,10 @@
 @import './partials/responsive';
 
 
-
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    line-height: 1.15cm;
 }
 body{
     font-family: 'Roboto', sans-serif; 
@@ -26,3 +24,24 @@ picture{
     }
 }
 
+%text-style {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+  }
+  h2 {
+    @extend %text-style;
+    font-size: 24px; // Överskrifter har en större font-size
+    font-weight: bold;
+  }
+  
+  p {
+    @extend %text-style;
+  }
+  a {
+    @extend %text-style;
+    text-decoration: none;  
+    &:hover {
+      text-decoration: underline;
+    }
+  }
