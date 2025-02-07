@@ -1,15 +1,26 @@
-header {
-    background-color: $primary-color;
-    padding: 1rem;
-    nav ul {
-        @include flex-center;
-        list-style: none;
-        li {
-            margin: 0 1rem;
-            a {
-                color: $text-light;
-                text-decoration: none;
-            }
-        }
-    }
-}
+// _layout.scss
+.container {
+    width: 100vw;
+    height: auto;
+    display: grid;
+    grid-template-areas: 
+      'nav'
+      'banner'
+      'header1'
+      'footer';
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  
+  main {
+    margin-top: 2em;
+    padding: 15em 6em;
+  }
+  
+  h1 {
+    font-size: 42px;
+  }
+  
+  h2 {
+    font-size: 36px;
+  }

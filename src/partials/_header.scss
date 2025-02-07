@@ -1,0 +1,20 @@
+// _header.scss
+header {
+    grid-area: nav;
+    height: 80px;
+    width: 100vw;
+    background-color: $primary-color;
+    margin: 0;
+    position: fixed;
+    padding: 0 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    .logo a {
+      color: $secondary-color;
+      font-size: 0.8em;
+      margin: 0;
+      text-decoration: none;
+      }
+  }
