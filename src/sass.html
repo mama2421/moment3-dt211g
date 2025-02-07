@@ -3,24 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SASS</title>
-    <link rel="stylesheet" href="styles/main.scss">
+    <title>Moment1(DT211G)</title>
+    <script type="module" src="main.js" defer></script>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
+    <!--Navigation, banner as well as footer is the same for all 3 pages-->
+<div class="container">
     <header>
-        <nav>
+        <!-- Menu for tablet and phone-->
+        <button class="menu-btn open" id="open-menu">
+            <span class="menu-icon">
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+            </span>
+            <span class="menu-text">Meny</span>
+        </button>
+        <!-- nav -->
+        <nav id="nav-menu">
+            <!-- when the mobile nav is visable-->
+            <button class="menu-btn close" id="close-menu">
+                <span class="menu-icon">
+                    <span class="bars cross1"></span>
+                    <span class="bars cross2"></span>
+                </span>
+                <span class="menu-text">Stäng</span>
+            </button>
+            <!--The options-->
             <ul>
-                <li><a href="index.html">Hem</a></li>
-                <li><a href="sass.html">SASS</a></li>
-                <li><a href="#">Om oss</a></li>
-                <li><a href="#">Tjänster</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <li><a href="./index">STARTSIDA</a></li>
+                <li><a href="./sass">SASS</a></li>
+                <li><a href="#">#</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>SASS-utvärdering</h1>
-        <p>Här är min utvärdering av SASS...</p>
-    </main>
+<main>
+    <section>
+      
+    </section>
+</main>    
+<footer class="footer">
+        <p>Laborationsuppgift för kursen DT211G</p>
+        <p>&#169; Copyright Manar Matroud, 2025</p>
+</footer>
+</div>
 </body>
 </html>
