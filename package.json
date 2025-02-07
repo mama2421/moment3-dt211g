@@ -1,8 +1,11 @@
 {
   "name": "moment2",
   "version": "1.0.0",
-  "main": "index.js",
-"source": ["src/index.html", "src/sass.html"],
+  "main": "index.html",
+  "source": [
+    "src/index.html",
+    "src/sass.html"
+  ],
   "scripts": {
     "start": "parcel",
     "build": "parcel build"
@@ -12,7 +15,8 @@
   "description": "",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.13.3",
-    "parcel": "^2.13.3"
+    "parcel": "^2.13.3",
+    "sharp": "^0.33.5"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead"
 }
