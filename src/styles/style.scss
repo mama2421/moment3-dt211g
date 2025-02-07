@@ -6,6 +6,8 @@
 @import './partials/layout';
 @import './partials/responsive';
 
+$theme: 'light';
+
 /* Global styles */
 * {
     box-sizing: border-box;
@@ -23,9 +25,9 @@ picture img {
     height: 200px;
   
     @if $theme == 'dark' {
-      border: 2px solid white;
+      border: 3px solid white;
     } @else {
-      border: 2px solid black;
+      border: 3px solid black;
     }
   }
 
