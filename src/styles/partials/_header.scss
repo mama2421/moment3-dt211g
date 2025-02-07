@@ -12,12 +12,12 @@ header {
   align-items: center;
 
   // Default (light theme)
-  background-color: $primary-color-light;
+  background-color: $primary-color;
   color: $secondary-color-light; 
 
   // Hover effect for light theme
   &:hover {
-    background-color: lighten($primary-color-light, 2%);
+    background-color: lighten($primary-color, 2%);
   }
 
   // Media query for dark theme
