@@ -1,21 +1,49 @@
+@charset "UTF-8";
+/* Allmänna variabler */
+/* Ljust Tema */
+/* Mörkt Tema */
+/* Allmänna variabler */
+/* Ljust Tema */
+/* Mörkt Tema */
 header {
   grid-area: nav;
   height: 80px;
   width: 100vw;
-  background-color: rgb(168, 141, 146);
   margin: 0;
   position: fixed;
   padding: 0 1em;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #ffffff;
+  color: #333333;
 }
 header:hover {
-  background-color: #ac9398;
+  background-color: white;
+}
+@media (prefers-color-scheme: dark) {
+  header {
+    background-color: #5e5e5e;
+    color: #e0e0e0;
+  }
+  header:hover {
+    background-color: #636363;
+  }
+  header #nav-menu {
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+  }
+  header nav ul {
+    color: #e0e0e0;
+    background-color: #5e5e5e;
+  }
 }
 
+/* Allmänna variabler */
+/* Ljust Tema */
+/* Mörkt Tema */
 nav {
-  background-color: rgb(168, 141, 146);
+  background-color: #ffffff;
   box-shadow: 2px 0px 1000px rgba(0, 0, 0, 0.71);
   font-size: 1.4em;
   position: fixed;
@@ -37,13 +65,29 @@ nav li {
   width: 100%;
 }
 nav li:hover {
-  background-color: rgb(168, 141, 146);
+  background-color: #ffffff;
   cursor: pointer;
 }
 nav a {
-  color: #000;
+  color: #333333;
   text-decoration: none;
   padding: 0 1em;
+}
+@media (prefers-color-scheme: dark) {
+  nav {
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+  }
+  nav ul {
+    color: #e0e0e0;
+    background-color: #5e5e5e;
+  }
+  nav li:hover {
+    background-color: #2b2b2b;
+  }
+  nav a {
+    color: #e0e0e0;
+  }
 }
 
 .menu-btn {
@@ -51,8 +95,8 @@ nav a {
   justify-content: center;
   align-items: center;
   padding: 8px 15px;
-  background-color: rgb(168, 141, 146);
-  border: #000 solid 2px;
+  background-color: #ffffff;
+  border: #333333 solid 2px;
   cursor: pointer;
 }
 .menu-btn:hover {
@@ -65,12 +109,24 @@ nav a {
   display: block;
   width: 20px;
   height: 3px;
-  background-color: #000;
+  background-color: #333333;
   margin: 5px 0;
 }
 .menu-btn .menu-text {
   font-size: 1.2em;
-  color: #000;
+  color: #333333;
+}
+@media (prefers-color-scheme: dark) {
+  .menu-btn {
+    background-color: #2b2b2b;
+    border: #e0e0e0 solid 2px;
+  }
+  .menu-btn .bars {
+    background-color: #e0e0e0;
+  }
+  .menu-btn .menu-text {
+    color: #e0e0e0;
+  }
 }
 
 .close {
@@ -80,7 +136,12 @@ nav a {
 
 .cross1, .cross2 {
   width: 25px;
-  background-color: #000;
+  background-color: #333333;
+}
+@media (prefers-color-scheme: dark) {
+  .cross1, .cross2 {
+    background-color: #e0e0e0;
+  }
 }
 
 .cross1 {
@@ -95,13 +156,29 @@ nav a {
   top: -3px;
 }
 
+/* Allmänna variabler */
+/* Ljust Tema */
+/* Mörkt Tema */
 .footer {
   bottom: 0;
   width: 100vw;
-  background-color: #584447;
   text-align: center;
   padding: 2rem;
   font-size: 18px;
+  background-color: #ffffff;
+  color: #333333;
+}
+.footer:hover {
+  background-color: white;
+}
+@media (prefers-color-scheme: dark) {
+  .footer {
+    background-color: #5e5e5e;
+    color: #e0e0e0;
+  }
+  .footer:hover {
+    background-color: #636363;
+  }
 }
 
 .container {
@@ -166,6 +243,7 @@ main {
     width: 300px;
   }
 }
+/* Global styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -182,6 +260,7 @@ picture img {
   height: 200px;
 }
 
+/* Text styles */
 a, p, h2 {
   font-size: 16px;
   line-height: 1.8rem;
@@ -202,4 +281,25 @@ a {
 }
 a:hover {
   text-decoration: underline;
+}
+
+/* Ljust Tema (Light Theme) - Default styles */
+body {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+a {
+  color: #007bff;
+}
+
+/* Media Query för mörkt tema (Dark Theme) */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+  }
+  a {
+    color: #bb86fc;
+  }
 }/*# sourceMappingURL=style.css.map */

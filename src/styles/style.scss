@@ -6,43 +6,70 @@
 @import './partials/layout';
 @import './partials/responsive';
 
-
-*{
+/* Global styles */
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body{
-    font-family: 'Roboto', sans-serif; 
+
+body {
+    font-family: 'Roboto', sans-serif;
     --color2: pink;
 }
 
-picture{
-    img{
+picture {
+    img {
         width: 300px;
         height: 200px;
     }
 }
 
+/* Text styles */
 %text-style {
     font-size: 16px;
     line-height: 1.8rem;
     font-family: 'Roboto', sans-serif;
-  }
-  h2 {
+}
+
+h2 {
     @extend %text-style;
-    font-size: 36px; 
+    font-size: 36px;
     font-weight: bold;
-  }
-  
-  p {
+}
+
+p {
     @extend %text-style;
     padding-bottom: 2em;
-  }
-  a {
+}
+
+a {
     @extend %text-style;
-    text-decoration: none;  
+    text-decoration: none;
+
     &:hover {
-      text-decoration: underline;
+        text-decoration: underline;
     }
-  }
+}
+
+/* Ljust Tema (Light Theme) - Default styles */
+body {
+    background-color: $primary-color-light;
+    color: $secondary-color-light;
+}
+
+a {
+    color: $accent-color-light;
+}
+
+/* Media Query för mörkt tema (Dark Theme) */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: $primary-color-dark;
+        color: $secondary-color-dark;
+    }
+
+    a {
+        color: $accent-color-dark;
+    }
+}

@@ -1,87 +1,129 @@
-// _nav.scss
+@import './variables'; // Import the variables
+
 nav {
-    background-color: $primary-color;
-    @include box-shadow(2px 0px 1000px rgba(0, 0, 0, 0.71));
-    font-size: 1.4em;
-    position: fixed;
-    right: 0;
-    top: 0;
-    height: 100vh;
-    width: 250px;
-    display: none;
-  
-    ul {
-      width: 100%;
-      list-style-type: none;
-      text-align: center;
-      margin: 0 auto;
-      padding: 0;
+  // Default (light theme)
+  background-color: $primary-color-light;
+  @include box-shadow(2px 0px 1000px rgba(0, 0, 0, 0.71));
+  font-size: 1.4em;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 250px;
+  display: none;
+
+  ul {
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  li {
+    padding: 0.8em 0;
+    width: 100%;
+
+    &:hover {
+      background-color: $primary-color-light;
+      cursor: pointer;
     }
-  
+  }
+
+  a {
+    color: $secondary-color-light;
+    text-decoration: none;
+    padding: 0 1em;
+  }
+
+  // Media query for dark theme
+  @media (prefers-color-scheme: dark) {
+    background-color: $primary-color-dark; // Dark theme background
+    color: $secondary-color-dark; // Dark theme text color
+
+    ul {
+      color: $secondary-color-dark;
+      background-color: lighten($primary-color-dark, 20%);
+    }
+
     li {
-      padding: 0.8em 0;
-      width: 100%;
-  
       &:hover {
-        background-color: $primary-color;
-        cursor: pointer;
+        background-color: $primary-color-dark;
       }
     }
-  
+
     a {
-      color: $secondary-color;
-      text-decoration: none;
-      padding: 0 1em;
+      color: $secondary-color-dark; // Dark theme link color
     }
   }
-  
-  .menu-btn {
-    @include flex-center;
-    padding: 8px 15px;
-    background-color: $primary-color;
-    border: $secondary-color solid 2px;
-    cursor: pointer;
-  
-    &:hover {
-      @include box-shadow(0 0px 5px rgba(0, 0, 0, 0.421));
-    }
-  
-    .menu-icon {
-      margin-right: 10px;
-    }
-  
+}
+
+.menu-btn {
+  @include flex-center;
+  padding: 8px 15px;
+  background-color: $primary-color-light;
+  border: $secondary-color-light solid 2px;
+  cursor: pointer;
+
+  &:hover {
+    @include box-shadow(0 0px 5px rgba(0, 0, 0, 0.421));
+  }
+
+  .menu-icon {
+    margin-right: 10px;
+  }
+
+  .bars {
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: $secondary-color-light;
+    margin: 5px 0;
+  }
+
+  .menu-text {
+    font-size: 1.2em;
+    color: $secondary-color-light;
+  }
+
+  // Media query for dark theme
+  @media (prefers-color-scheme: dark) {
+    background-color: $primary-color-dark;
+    border: $secondary-color-dark solid 2px;
+
     .bars {
-      display: block;
-      width: 20px;
-      height: 3px;
-      background-color: $secondary-color;
-      margin: 5px 0;
+      background-color: $secondary-color-dark;
     }
-  
+
     .menu-text {
-      font-size: 1.2em;
-      color: $secondary-color;
+      color: $secondary-color-dark;
     }
   }
-  
-  .close {
-    margin: 1em 1.5em;
-    padding: 10px 15px;
+}
+
+.close {
+  margin: 1em 1.5em;
+  padding: 10px 15px;
+}
+
+.cross1, .cross2 {
+  width: 25px;
+  background-color: $secondary-color-light;
+
+  // Media query for dark theme
+  @media (prefers-color-scheme: dark) {
+    background-color: $secondary-color-dark;
   }
-  
-  .cross1, .cross2 {
-    width: 25px;
-    background-color: $secondary-color;
-  }
-  
-  .cross1 {
-    transform: rotate(45deg);
-    position: relative;
-    top: 5px;
-  }
-  
-  .cross2 {
-    transform: rotate(135deg);
-    position: relative;
-    top: -3px;
-  }
+}
+
+.cross1 {
+  transform: rotate(45deg);
+  position: relative;
+  top: 5px;
+}
+
+.cross2 {
+  transform: rotate(135deg);
+  position: relative;
+  top: -3px;
+}

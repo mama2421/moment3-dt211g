@@ -1,9 +1,29 @@
-// _footer.scss
+@import './variables'; // Import the variables
+
 .footer {
   bottom: 0;
   width: 100vw;
-  background-color: darken($primary-color, 30%);
   text-align: center;
   padding: 2rem;
   font-size: 18px;
+
+  // Default (light theme)
+  background-color: $primary-color-light;
+  color: $secondary-color-light; 
+
+  // Hover effect for light theme
+  &:hover {
+    background-color: lighten($primary-color-light, 2%);
+  }
+
+  // Media query for dark theme
+  @media (prefers-color-scheme: dark) {
+    background-color: lighten($primary-color-dark, 20%);
+    color: $secondary-color-dark;
+
+    // Hover effect for dark theme
+    &:hover {
+      background-color: lighten($primary-color-dark, 22%);
+    }
+  }
 }
