@@ -1,3 +1,12 @@
+@import './partials/variables';
+@import './partials/mixins';
+@import './partials/header';
+@import './partials/nav';
+@import './partials/footer';
+@import './partials/layout';
+@import './partials/responsive';
+
+
 
 *{
     box-sizing: border-box;
@@ -10,11 +19,3 @@ body{
     --color2: pink;
 }
 
-@import 'partials/variables';
-@import './partials/mixins';
-@import './partials/base';
-@import './partials/header';
-@import './partials/nav';
-@import './partials/footer';
-@import './partials/layout';
-@import './partials/responsive';

@@ -1,3 +1,182 @@
+header {
+  grid-area: nav;
+  height: 80px;
+  width: 100vw;
+  background-color: pink;
+  margin: 0;
+  position: fixed;
+  padding: 0 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo a {
+  color: #000;
+  font-size: 0.8em;
+  margin: 0;
+  text-decoration: none;
+}
+
+nav {
+  background-color: pink;
+  box-shadow: 2px 0px 1000px rgba(0, 0, 0, 0.71);
+  font-size: 1.4em;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 250px;
+  display: none;
+}
+nav ul {
+  width: 100%;
+  list-style-type: none;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+nav li {
+  padding: 0.8em 0;
+  width: 100%;
+}
+nav li:hover {
+  background-color: pink;
+  cursor: pointer;
+}
+nav a {
+  color: #000;
+  text-decoration: none;
+  padding: 0 1em;
+}
+
+.menu-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 15px;
+  background-color: pink;
+  border: #000 solid 2px;
+  cursor: pointer;
+}
+.menu-btn:hover {
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.421);
+}
+.menu-btn .menu-icon {
+  margin-right: 10px;
+}
+.menu-btn .bars {
+  display: block;
+  width: 20px;
+  height: 3px;
+  background-color: #000;
+  margin: 5px 0;
+}
+.menu-btn .menu-text {
+  font-size: 1.2em;
+  color: #000;
+}
+
+.close {
+  margin: 1em 1.5em;
+  padding: 10px 15px;
+}
+
+.cross1, .cross2 {
+  width: 25px;
+  background-color: #000;
+}
+
+.cross1 {
+  transform: rotate(45deg);
+  position: relative;
+  top: 5px;
+}
+
+.cross2 {
+  transform: rotate(135deg);
+  position: relative;
+  top: -3px;
+}
+
+.footer {
+  bottom: 0;
+  width: 100vw;
+  background-color: pink;
+  text-align: center;
+  padding: 2rem;
+  font-size: 18px;
+}
+
+.container {
+  width: 100vw;
+  height: auto;
+  display: grid;
+  grid-template-areas: "nav" "banner" "header1" "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+main {
+  margin-top: 2em;
+  padding: 15em 6em;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+@media only screen and (min-width: 992px) {
+  header {
+    padding: 0 3em;
+  }
+  .menu-btn {
+    display: none;
+  }
+  #open-menu {
+    display: none !important;
+    right: 0;
+  }
+  header {
+    position: fixed;
+  }
+  nav {
+    display: block !important;
+    position: static;
+    box-shadow: 0 0px 0px;
+    height: auto;
+    font-size: 18px;
+    width: auto;
+  }
+  nav ul {
+    height: 100%;
+  }
+  nav li {
+    display: inline;
+    padding: 1.2em 0;
+  }
+}
+@media (max-width: 950px) {
+  body {
+    width: 100vw;
+  }
+  main {
+    margin: 0;
+    padding: 6em 0;
+  }
+  section {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0.5em;
+  }
+  h1 {
+    font-size: 1.5em;
+    width: 300px;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
