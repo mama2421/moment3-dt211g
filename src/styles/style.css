@@ -240,10 +240,10 @@ main {
     width: 300px;
   }
 }
-img {
+.img {
   transition: transform 0.5s ease-in-out;
 }
-img:hover {
+.img:hover {
   transform: scale(1.1);
 }
 
@@ -265,7 +265,7 @@ img:hover {
   animation: move-object 3s infinite;
 }
 
-button {
+.button {
   background-color: #007bff;
   color: white;
   padding: 10px 20px;
@@ -273,10 +273,10 @@ button {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-button:hover {
+.button:hover {
   background-color: #0056b3;
 }
-button:active {
+.button:active {
   background-color: #003d80;
 }
 
