@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "source": [
     "src/index.html",
-    "src/sass.html"
+    "src/sass.html",
+    "src/animering.html"
   ],
   "scripts": {
     "start": "parcel",
