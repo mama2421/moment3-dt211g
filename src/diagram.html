@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moment3(DT211G)</title>
+    <title>Moment5(DT211G)</title>
     <script type="module" src="main.js" defer></script>
+    <script type="module" src="diagram.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
@@ -42,6 +44,17 @@
     </header>
 <main>
     <section>
+        <section>
+            <h1>Statistik över antagningssökande</h1>
+            <div>
+                <h2>De 6 mest sökta kurserna (HT23)</h2>
+                <canvas id="barChart"></canvas>
+            </div>
+            <div>
+                <h2>De 5 mest sökta programmen (HT23)</h2>
+                <canvas id="pieChart"></canvas>
+            </div>        
+        </section>
     </section>
 </main>    
 <footer class="footer">
