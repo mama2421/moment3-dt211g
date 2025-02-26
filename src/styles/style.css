@@ -341,3 +341,15 @@ a {
     color: #bb86fc;
   }
 }/*# sourceMappingURL=style.css.map */
+
+  #locationInput{
+      width: 15em;
+      height: 2em;
+      font-size: 1em;
+      margin:1em 0;
+  }
+  form button{
+    width: 3em;
+    height: 2em;
+    font-size: 1em;
+  }

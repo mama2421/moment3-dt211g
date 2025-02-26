@@ -1,4 +1,4 @@
-// diagram.js
+"use strict"
 
 /**
  * Hämtar data från API:et och returnerar den som ett JavaScript-objekt.

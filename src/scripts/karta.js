@@ -1,3 +1,16 @@
+"use strict"
+
+// Standardkoordinater för Stockholm
+const defaultLat = "59.3293";
+const defaultLon = "18.0686";
+
+/**
+ * Initierar kartan med en standardplats vid sidans start.
+ */
+document.addEventListener("DOMContentLoaded", function () {
+    updateMap(defaultLat, defaultLon);
+});
+
 /**
  * Lyssnar på formulärets submit-event och hämtar koordinater från Nominatim API.
  */
@@ -32,3 +45,4 @@ function updateMap(lat, lon) {
     const mapFrame = document.getElementById("mapFrame");
     mapFrame.src = `https://www.openstreetmap.org/export/embed.html?bbox=${lon},${lat},${lon},${lat}&marker=${lat},${lon}`;
 }
+
