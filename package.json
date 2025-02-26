@@ -4,7 +4,9 @@
   "source": [
     "src/index.html",
     "src/sass.html",
-    "src/animering.html"
+    "src/animering.html",
+    "src/diagram.html",
+    "src/karta.html"
   ],
   "scripts": {
     "start": "parcel",
