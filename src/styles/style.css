@@ -352,6 +352,9 @@ a {
     font-size: 1em;
   }
   
+  @media (min-width: 600px) {
+    
+
 .diagram{
   display: flex;
   flex-direction: row;
@@ -361,4 +364,4 @@ a {
 }
 .programe{
   width: 50%;
-}
+}  }
