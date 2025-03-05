@@ -356,3 +356,9 @@ a {
   display: flex;
   flex-direction: row;
 }
+.course{
+  width: 50%;
+}
+.programe{
+  width: 50%;
+}
