@@ -351,3 +351,8 @@ a {
     height: 2em;
     font-size: 1em;
   }
+  
+.diagram{
+  display: flex;
+  flex-direction: row;
+}
