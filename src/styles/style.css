@@ -352,16 +352,3 @@ a {
     font-size: 1em;
   }
   
-  @media (min-width: 600px) {
-    
-
-.diagram{
-  display: flex;
-  flex-direction: row;
-}
-.course{
-  width: 50%;
-}
-.programe{
-  width: 50%;
-}  }

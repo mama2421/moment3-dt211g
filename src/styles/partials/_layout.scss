@@ -1,7 +1,7 @@
 // _layout.scss
 $theme: 'light';
 .container {
-    width: 100vw;
+    box-sizing: border-box;
     height: auto;
     display: grid;
     grid-template-areas: 
@@ -14,6 +14,7 @@ $theme: 'light';
   }
   
   main {
+    box-sizing: border-box;
     margin-top: 2em;
     padding: 15em 6em;
   }
