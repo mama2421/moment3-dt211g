@@ -14,7 +14,6 @@ $theme: 'light';
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
 body {
@@ -92,17 +91,30 @@ form{
     width: 15em;
     height: 2em;
     font-size: 1em;
+}
+button{
+    width: 5em;
+    height: 2em;
+    font-size: 1em;
 }}
 
+
 @media (min-width: 600px) {
-    .diagram{
-      display: flex;
-      flex-direction: row;
-      width: 90%;
+    .dia{
+        box-sizing: border-box;
+        overflow-x: hidden;
+        padding-left: 2em;
+
+        .diagram{
+        display: flex;
+        flex-direction: row;
+        }
+        .course{
+        width: 30%;
+        padding: 0 2em;
+        }
+        .programe{
+        width: 30%;
+        }  
     }
-    .course{
-      width: 48%;
-    }
-    .programe{
-      width: 48%;
-    }  }
+}

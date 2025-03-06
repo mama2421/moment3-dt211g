@@ -1,5 +1,9 @@
 // _responsive.scss
 @media only screen and (min-width: 992px) {
+    main{
+      box-sizing: border-box;
+      width: 100vw;
+    }
     header {
       padding: 0 3em;
     }
@@ -31,7 +35,6 @@
   
       li {
         display: inline;
-        padding: 1.2em 0;
       }
     }
   }

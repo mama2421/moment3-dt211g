@@ -2,6 +2,7 @@
 $theme: 'light';
 .container {
     box-sizing: border-box;
+    overflow-x: hidden;
     height: auto;
     display: grid;
     grid-template-areas: 
@@ -16,6 +17,6 @@ $theme: 'light';
   main {
     box-sizing: border-box;
     margin-top: 2em;
-    padding: 15em 6em;
+    padding: 15em 0;
   }
   
