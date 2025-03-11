@@ -60,3 +60,35 @@
       width: 300px;
     }
   }
+
+  //för diagrammed
+@media (min-width: 913px) {
+  .dia{
+      box-sizing: border-box;
+      overflow-x: hidden;
+      width: 100%;
+      padding-left: 2em;
+
+      .diagram{
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+      }
+      .course{
+          width: 49%;
+          padding: 0 2em;
+      }
+      .programe{
+          width: 40%;
+          height: auto;
+      }  
+  }
+}
+@media (max-width: 913px) {
+  .diagram{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+}

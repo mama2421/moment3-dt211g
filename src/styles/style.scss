@@ -38,12 +38,6 @@ picture img {
     font-family: 'Roboto', sans-serif;
 }
 
-h2 {
-    @extend %text-style;
-    font-size: 36px;
-    font-weight: bold;
-}
-
 p {
     @extend %text-style;
     padding-bottom: 2em;
@@ -98,23 +92,3 @@ button{
     font-size: 1em;
 }}
 
-
-@media (min-width: 600px) {
-    .dia{
-        box-sizing: border-box;
-        overflow-x: hidden;
-        padding-left: 2em;
-
-        .diagram{
-        display: flex;
-        flex-direction: row;
-        }
-        .course{
-        width: 30%;
-        padding: 0 2em;
-        }
-        .programe{
-        width: 30%;
-        }  
-    }
-}
